@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Жіночий одяг - Трансформації</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffe6f0, #f9f2f9);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9eb3, #ffb6c1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #fce4ec;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.5s ease, transform 0.3s;
+    }
+
+    nav li:hover {
+      background-color: #f8bbd0;
+      transform: scale(1.1);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    article, section, aside {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      flex: 1 1 300px;
+    }
+
+    article h2, section h3 {
+      color: #c2185b;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 15px 0;
+      padding-left: 15px;
+      border-left: 3px solid deeppink;
+    }
+
+    /* --- Завдання 2: scale(x, y) --- */
+    section img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: transform 0.4s ease-in-out;
+      transform-origin: center;
+    }
+
+    section img:hover {
+      transform: scale(1.2, 1.1); /* scale(x, y) */
+    }
+
+    /* --- Завдання 3: scale3d(x, y, z) --- */
+    aside {
+      background-color: #fce4ec;
+      font-style: italic;
+      transition: transform 1s ease;
+      transform-style: preserve-3d;
+      perspective: 800px;
+    }
+
+    aside:hover {
+      transform: scale3d(1.2, 1.2, 1.1); /* scale3d(x, y, z) */
+    }
+
+    footer {
+      background-color: #ffcdd2;
+      text-align: center;
+      padding: 20px;
+      color: #6b1f3a;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Жіночий одяг</h1>
+    <p>Лабораторна робота 6 — CSS3: переходи, 2D і 3D трансформації</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Сукні</li>
+      <li>Блузи</li>
+      <li>Спідниці</li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Сукні</h2>
+      <p>Сучасні <strong>жіночі сукні</strong> мають різноманітні фасони, тканини і кольори — як для повсякденного стилю, так і для вечора.</p>
+      <blockquote>«Сукня — це основа жіночого гардеробу.»</blockquote>
+    </article>
+
+    <section>
+      <h3>Блузи</h3>
+      <p>Блузи чудово поєднуються з брюками і спідницями, бувають класичні, вишиті або кежуал.</p>
+      <img src="IMG_4190 copy-1100x1400.jpg" alt="Блуза">
+    </section>
+
+    <aside>
+      Одяг впливає на самопочуття і впевненість у собі. Мода змінюється, а стиль залишається.
+    </aside>
+  </main>
+
+  <footer>
+    &copy; 2025 Навчальний сайт з HTML5 | Всі права захищені
+  </footer>
+</body>
+</html>

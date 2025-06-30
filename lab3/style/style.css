@@ -1,0 +1,21 @@
+table.table{
+    border: 5px solid rgb(34, 3, 190);
+    border-collapse: collapse; 
+    width: 100%;
+}
+table.table td{
+    border: 3px solid rgb(34, 3, 190);
+    text-align: center;
+    background-color: tan;
+}
+table.table th{
+    background-color: rgb(107, 217, 11);
+    font-size: 30px;
+}
+#bio{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: silver;
+}

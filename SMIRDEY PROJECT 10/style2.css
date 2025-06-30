@@ -1,0 +1,87 @@
+body {
+  background-color: #f0fdfb;
+  color: #014d4d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: #014d4d !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #dff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.hero-text {
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  padding: 100px 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.hero-box {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  text-align: center;
+  color: #006266;
+}
+
+.btn-primary {
+  background-color: #00b894;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #009475;
+}
+
+.btn-outline-success {
+  border-color: #0984e3;
+  color: #0984e3;
+}
+
+.btn-outline-success:hover {
+  background-color: #0984e3;
+  color: #fff;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+.card-title {
+  color: #014d4d;
+}
+
+footer {
+  background-color: #014d4d;
+  padding: 20px 0;
+  color: #ccc;
+}
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background: rgba(1, 77, 77, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #00b894;
+}

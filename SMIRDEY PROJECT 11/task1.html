@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма реєстрації читача</title>
+</head>
+<body>
+  <h1>Анкета для запису до бібліотеки</h1>
+
+  <form action="/submit" method="post">
+
+    <label for="username">Ім’я читача:</label>
+    <input type="text" id="username" name="username" placeholder="Введіть ім’я" required maxlength="30"><br><br>
+
+    <label for="message">Улюблені жанри чи книги:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Наприклад: детективи, фантастика..." required></textarea><br><br>
+
+    <label for="password">Пароль для особистого кабінету:</label>
+    <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+    <label for="email">Email для повідомлень:</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+    <label for="volume">Оцінка зручності каталогу (0–100):</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="50"><br><br>
+
+    <fieldset>
+      <legend>Мова читання:</legend>
+      <input type="radio" id="ukrainian" name="language" value="ukrainian" checked>
+      <label for="ukrainian">Українська</label><br>
+      <input type="radio" id="english" name="language" value="english">
+      <label for="english">Англійська</label><br>
+      <input type="radio" id="polish" name="language" value="polish">
+      <label for="polish">Польська</label><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Улюблені кольори обкладинок:</legend>
+      <input type="checkbox" id="red" name="colors" value="red">
+      <label for="red">Червоний</label><br>
+      <input type="checkbox" id="green" name="colors" value="green">
+      <label for="green">Зелений</label><br>
+      <input type="checkbox" id="blue" name="colors" value="blue">
+      <label for="blue">Синій</label><br>
+    </fieldset><br>
+
+    <label for="car">Улюблений вид транспорту до бібліотеки:</label>
+    <select id="car" name="car">
+      <optgroup label="Міський">
+        <option value="bus">Автобус</option>
+        <option value="tram">Трамвай</option>
+      </optgroup>
+      <optgroup label="Особистий">
+        <option value="bike">Велосипед</option>
+        <option value="car">Автомобіль</option>
+        <option value="walk">Пішки</option>
+      </optgroup>
+    </select><br><br>
+
+    <label for="genres">Улюблені жанри:</label>
+    <select id="genres" name="genres" multiple size="4">
+      <option value="fantasy">Фентезі</option>
+      <option value="detective">Детектив</option>
+      <option value="history">Історія</option>
+      <option value="science">Наукова література</option>
+    </select><br><br>
+
+    <input type="submit" value="Зареєструватися">
+    <input type="reset" value="Очистити">
+    <input type="button" value="Натисни" onClick='alert("Дякуємо за інтерес до читання!")'>
+
+  </form>
+</body>
+</html>

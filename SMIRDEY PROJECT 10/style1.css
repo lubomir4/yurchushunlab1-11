@@ -1,0 +1,104 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  background-color: #444 !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #ddd !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #fff !important;
+}
+
+.hero-text {
+  background: #e0e0e0;
+  padding: 60px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: #212121;
+}
+
+.carousel-inner img {
+  filter: grayscale(60%);
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #222;
+}
+
+.card-text {
+  color: #555;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.btn-primary {
+  background-color: #777;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+.btn-outline-success {
+  color: #666;
+  border-color: #999;
+}
+
+.btn-outline-success:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #aaa;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #888;
+}
+
+form .form-control {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #333;
+}
+
+form .form-control:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 20px 0;
+}

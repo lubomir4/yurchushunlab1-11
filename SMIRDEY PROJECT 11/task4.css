@@ -1,0 +1,26 @@
+input:valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+  }
+
+  input:invalid {
+    border: 2px solid rgb(187, 41, 206);
+    background-color: #ffe6e6;
+  }
+
+ 
+  input[type="checkbox"]:checked + label {
+    color: rgb(53, 142, 205);
+    font-weight: bold;
+  }
+
+ 
+  input:not([type="email"]) {
+    background-color: #f9f9f9;
+  }
+
+
+  textarea:read-write {
+    border: 2px dashed rgb(128, 124, 23);
+    background-color: #eef;
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Жіночий одяг</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9eb3, #ffb6c1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #fce4ec;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav li {
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav li:hover {
+      background-color: #f8bbd0;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    article, section, aside {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      flex: 1 1 300px;
+    }
+
+    article h2, section h3 {
+      color: #c2185b;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 15px 0;
+      padding-left: 15px;
+      border-left: 3px solid #e91e63;
+    }
+
+    section img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    aside {
+      background-color: #fce4ec;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: #ffccd5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #6b1f3a;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Жіночий одяг</h1>
+    <p>Мода, стиль, впевненість</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Сукні</li>
+      <li>Блузи</li>
+      <li>Спідниці</li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Сукні</h2>
+      <p>Сучасні <strong>жіночі сукні</strong> відзначаються різноманітністю фасонів, тканин і кольорів. Вони можуть бути як повсякденними, так і вечірніми.</p>
+      <blockquote>«Сукня — це основа жіночого гардеробу.»</blockquote>
+    </article>
+
+    <section>
+      <h3>Блузи</h3>
+      <p>Блузи чудово пасують до спідниць або брюк, вони бувають класичні, вишиті або кежуал стилю.</p>
+      <img src="https://via.placeholder.com/300x200/ffb6c1/ffffff?text=Блуза" alt="Блуза">
+    </section>
+
+    <aside>
+      Одяг впливає на самопочуття і впевненість у собі. Мода змінюється, а стиль — залишається.
+    </aside>
+  </main>
+
+  <footer>
+    &copy; 2025 Навчальний сайт з HTML5 | Всі права захищені
+  </footer>
+</body>
+</html>

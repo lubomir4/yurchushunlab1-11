@@ -1,0 +1,21 @@
+.example::before {
+    content: "➤ ";
+    color: green;
+    font-weight: bold;
+  }
+
+  .example::after {
+    content: " ✔";
+    color: blue;
+  }
+
+  .text-sample::first-letter {
+    font-size: 200%;
+    color: red;
+    font-weight: bold;
+  }
+
+  .text-sample::first-line {
+    background-color: #f0f0f0;
+    font-style: italic;
+  }

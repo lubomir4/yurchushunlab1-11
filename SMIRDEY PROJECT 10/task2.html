@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wanderly – Твоя подорож починається тут</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <div id="travelCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+  </div>
+  <div class="carousel-inner rounded shadow">
+    <div class="carousel-item active">
+      <img src="карпати.jpg" class="d-block w-100" alt="Гори">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Вражаючі Карпати</h5>
+        <p>Поринь у спокій гірських пейзажів</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="узбережжя.jpg" class="d-block w-100" alt="Море">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Лазурне узбережжя</h5>
+        <p>Релакс та пригоди на березі моря</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="місто.jpg" class="d-block w-100" alt="Міста">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Європейські міста</h5>
+        <p>Відкрий для себе архітектуру та культуру</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Попередній</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Наступний</span>
+  </button>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Wanderly</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Напрямки</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Європа</a></li>
+            <li><a class="dropdown-item" href="#">Азія</a></li>
+            <li><a class="dropdown-item" href="#">Америка</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-text text-center text-white">
+  <div class="container">
+    <h1>Подорожуй розумно з Wanderly</h1>
+    <p>Обирай найкращі напрямки для своєї відпустки!</p>
+    <a href="#cards" class="btn btn-primary mt-3">Переглянути тури</a>
+  </div>
+</header>
+
+<section class="container my-5">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="hero-box p-4">
+        <h3>Дешеві квитки</h3>
+        <p>Ми підбираємо найвигідніші варіанти перельоту.</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="hero-box p-4">
+        <h3>Гнучкі тури</h3>
+        <p>Плануй маршрут відповідно до власного ритму життя.</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="hero-box p-4">
+        <h3>Служба підтримки</h3>
+        <p>24/7 допомога для наших мандрівників у будь-якій точці світу.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" id="cards">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <img src="париж.webp" alt="Париж" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Париж</h5>
+          <p class="card-text">Місто кохання та витонченості. Відвідай Ейфелеву вежу та Лувр.</p>
+          <a href="#" class="btn btn-outline-success">Детальніше</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <img src="балі.jpg" alt="Балі" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Балі</h5>
+          <p class="card-text">Тропічний рай з джунглями, пляжами та культурою островів.</p>
+          <a href="#" class="btn btn-outline-success">Детальніше</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card">
+        <img src="нью йорк.jpg" alt="Нью-Йорк" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Нью-Йорк</h5>
+          <p class="card-text">Мегаполіс, який ніколи не спить. Від Times Square до Central Park.</p>
+          <a href="#" class="btn btn-outline-success">Детальніше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="mb-4">Зв’яжіться з нами</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Ім’я</label>
+      <input type="text" class="form-control" id="name" placeholder="Ваше ім’я" />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Електронна пошта</label>
+      <input type="email" class="form-control" id="email" placeholder="email@example.com" />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Повідомлення</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Ваше повідомлення"></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning">Надіслати</button>
+  </form>
+</section>
+
+<footer class="text-center text-light">
+  <p>© 2025 Wanderly. Всі права захищено.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
